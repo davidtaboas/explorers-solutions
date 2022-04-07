@@ -1,8 +1,5 @@
 module.exports = {
-  content: [
-    './index.html',
-    './src/**/*.{js,jsx,ts,tsx}',
-  ],
+  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -39,11 +36,20 @@ module.exports = {
           800: '#285E61',
           900: '#234E52',
         },
+        explorers: {
+          black: '#000500',
+          blue: '#6290C3',
+          green: '#65AD57',
+          brown: '#E0C4A4',
+          yellow: '#F1C40F',
+          white: '#FFFBFF',
+        },
       },
       boxShadow: {
         xs: '0 0 0 1px rgba(0, 0, 0, 0.16)',
         sm: '0 1px 2px 0 rgba(0, 0, 0, 0.16)',
-        default: '0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.03)',
+        default:
+          '0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.03)',
         md: '0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
         lg: '0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02)',
         xl: '0 20px 25px -5px rgba(0, 0, 0, 0.12), 0 10px 10px -5px rgba(0, 0, 0, 0.02)',
@@ -58,7 +64,7 @@ module.exports = {
         '1/1': '100%',
       },
       fontFamily: {
-        inter: ['Inter', 'sans-serif']
+        inter: ['Inter', 'sans-serif'],
       },
       fontSize: {
         xs: '0.75rem',
@@ -74,7 +80,7 @@ module.exports = {
       },
       inset: {
         '1/2': '50%',
-        'full': '100%',
+        full: '100%',
       },
       letterSpacing: {
         tighter: '-0.02em',
@@ -92,32 +98,32 @@ module.exports = {
         normal: '1.5',
         relaxed: '1.625',
         loose: '2',
-        '3': '.75rem',
-        '4': '1rem',
-        '5': '1.2rem',
-        '6': '1.5rem',
-        '7': '1.75rem',
-        '8': '2rem',
-        '9': '2.25rem',
-        '10': '2.5rem',
+        3: '.75rem',
+        4: '1rem',
+        5: '1.2rem',
+        6: '1.5rem',
+        7: '1.75rem',
+        8: '2rem',
+        9: '2.25rem',
+        10: '2.5rem',
       },
       minWidth: {
-        '10': '2.5rem',
-        '48': '12rem',
+        10: '2.5rem',
+        48: '12rem',
       },
       opacity: {
-        '90': '0.9',
+        90: '0.9',
       },
       scale: {
-        '98': '.98'
+        98: '.98',
       },
       animation: {
         float: 'float 3s ease-in-out infinite',
       },
       keyframes: {
         float: {
-          '0%, 100%': { transform: 'translateY(0)', },
-          '50%': { transform: 'translateY(-5%)', },
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-5%)' },
         },
       },
       zIndex: {
@@ -132,7 +138,5 @@ module.exports = {
     boxShadow: ['responsive', 'hover', 'focus', 'focus-within'],
     opacity: ['responsive', 'hover', 'focus', 'group-hover'],
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
+  plugins: [require('@tailwindcss/forms')],
 };
